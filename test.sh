@@ -2,11 +2,11 @@
  
 # Usage: extract image and text features
 # only supports single-GPU inference
-export CUDA_VISIBLE_DEVICES=${1}
+# export CUDA_VISIBLE_DEVICES=${1}
 export PYTHONPATH=${PYTHONPATH}:`pwd`/cn_clip
  
-SPLIT=${2}
-DATAPATH=${3}
+SPLIT=train
+DATAPATH=${pwd}
 RESUME=${DATAPATH}/pretrained_weights/clip_cn_rn50.pt
 DATASET_NAME=Flickr30k-CN
  
